@@ -1,0 +1,43 @@
+.calculator{
+    color:blue;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+body{
+    background-color: black;
+}
+.digit{
+    border:none;
+    border-radius: 30px;
+    font-size:30px;
+    height:60px;
+    width:60px;
+    background-color: rgb(51,51,51);
+    color:white;
+    margin:2px;
+}
+.functions{
+    border:none;
+    border-radius:30px;
+    font-size:20px;
+    height:60px;
+    width:60px;
+    font-weight: bold;
+    background-color:rgb(254,160,10);
+    color:white;
+}
+.clear{
+    border:none;
+    border-radius: 30px;
+    font-size:15px;
+    height:60px;
+    width:60px;
+    background-color: rgb(51,51,51);
+    color:white;
+}
+.result{
+    color:white;
+    font-size: 50px;
+    font-family: arial;
+    
+}

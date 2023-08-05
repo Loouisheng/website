@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+   <button class='js-button' >Click</button>
+    <script>
+        const event = document.querySelector('.js-button').addEventListener('click',()=>{
+            update();
+        });
+
+        function update() {
+            const words = document.querySelector('.js-button');
+            setTimeout(()=>{
+                words.innerHTML = 'Finished!';
+            },1000)
+        }
+        
+        
+
+        // const buttonElement = document.querySelector('.js-button');
+
+        // const eventListener = ()=>{
+        //     console.log('click');
+        // }
+        // buttonElement.addEventListener('click',eventListener);
+
+        // buttonElement.removeEventListener('click',eventListener);
+
+        // buttonElement.addEventListener('click',()=>{
+        //     console.log('click2');
+        // });
+        // let messages = 2;
+
+        // function add(){
+        //     messages++;
+        //     return messages;
+        // }
+
+        // function remove(){
+        //     messages--;
+        //     return messages;
+        // }
+
+        // setInterval(function(){
+    //     //     if(messages===0){
+    //     //         document.title='App';
+    //     //     }else if(messages>0){
+    //     //         if(document.title ==='App'){
+    //     //             document.title = `(${messages}) New Messages`;
+    //     //         }else{
+    //     //             document.title = 'App';
+    //     //         }
+    //     //     };
+    //     // },1000)
+    //     [
+    //         'make dinner',
+    //         'wash dishes',
+    //         'watch youtube'
+    //    ].forEach((value,index) => {
+    //     if(value === 'wash dishes '){
+    //         return;
+    //     }
+
+
+    //     console.log(index);
+    //     console.log(value);
+    //    })
+
+    //     const regularFunction =(param,param2)=>{
+    //         console.log('hello');
+    //     };
+
+    //     const arrowFunction =(param,param2) => {
+    //         console.log('hello');
+    //     };
+
+    //     arrowFunction();
+
+    //     const oneLine =() => 2+3
+        
+
+    //     const object2 = {
+    //         method:(){
+
+    //         }
+
+
+    // 
+
+    // const mutiply = (num1,num2) => console.log(num1*num2);
+
+
+    // function countPositive(nums){
+    //     let positiveNums = 0;
+
+    //     nums.forEach(value => {
+    //         if(value>0){
+    //             positiveNums++;
+    //         }
+    //     }
+    //     )
+    //     return positiveNums;        
+    // }
+
+    // console.log(countPositive([-2,-3,5]))
+
+    // function addNum(array,num){
+    //     return array.map(value => value+num)
+    // }
+
+    // console.log(addNum([1,2,3],2)
+
+        
+    // function removeEgg(foods){
+    //     let eggCounts = 0 ;
+    //     return foods.filter(value =>{
+    //         if(value==='egg' && eggCounts<2){
+    //             eggCounts++;
+    //             return false;
+    //         }
+            
+    //         return true;
+    //     })
+    // }
+
+    // console.log(removeEgg(['apple','egg','apple']))
+
+    
+    </script>
+</body>
+</html>

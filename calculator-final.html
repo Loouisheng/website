@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/10-calculator-final.css">
+</head>
+<body>
+    <p class ='result'></p>
+    <p>
+        <button onclick="
+            updateCalculation(1);
+        " class="digit">1</button>
+        <button onclick="
+            updateCalculation(2);
+        "class="digit">2</button>
+        <button onclick="
+            updateCalculation(3);
+        "class="digit">3</button>
+        <button onclick="
+            updateCalculation('  +  ');
+        " class="functions">+</button>
+    </p>
+    <p>
+        <button onclick="
+            updateCalculation(4);
+        "class="digit">4</button>
+        <button onclick="
+            updateCalculation(5);
+        "class="digit">5</button>
+        <button onclick="
+            updateCalculation(6);
+        "class="digit">6</button>
+        <button onclick="
+            updateCalculation('  -  ');
+        "class="functions">-</button>
+    </p>
+    <p>
+        <button onclick="
+            updateCalculation(7);
+        "class="digit">7</button>
+        <button onclick="
+            updateCalculation(8);
+        "class="digit">8</button>
+        <button onclick="
+            updateCalculation(9);
+        "class="digit">9</button>
+        <button onclick="
+            updateCalculation('  *  ');
+        "class="functions">*</button>
+    </p>
+   <p>
+        <button onclick="
+            updateCalculation(0);
+            "class="digit">0</button>
+        
+        <button onclick="
+            updateCalculation('  .  ');
+        "class="digit">.</button>
+
+        <button onclick="
+            calculation = eval(calculation);
+            displayResult();
+            localStorage.setItem=('calculation',calculation);
+        "class="digit">=</button>
+
+        <button onclick="
+            updateCalculation('  /  ');
+        "class="functions">/</button>
+    </p>
+    
+    <p>
+        <button onclick="
+        calculation += '';
+        displayResult();
+        localStorage.removeItem = ('calculation');
+        
+        "class="clear">Clear</button>
+    </p>
+    <script src="scripts/10-calculator-final.js"></script>
+</body>
+</html>

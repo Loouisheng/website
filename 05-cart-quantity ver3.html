@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart quantity</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="
+        displayResult();
+    ">Show Qunatity</button>
+    <button onclick="
+        updataCartquantity(1);
+    ">Add to Cart</button>
+    
+    
+    <button onclick="
+        updataCartquantity(2);
+
+    ">+2</button>
+    
+    <button onclick="
+        updataCartquantity(3);
+
+    ">+3</button>
+    
+    <button onclick="
+        updataCartquantity(4);
+    ">+4</button>
+
+    <button onclick="
+        updataCartquantity(5);
+    ">+5</button>
+
+    <button onclick="
+        updataCartquantity(-1);
+    ">Remove from Cart</button>
+
+    <button onclick="
+        updataCartquantity(-2);
+    ">-2</button>
+
+    <button onclick="
+        updataCartquantity(-3);
+    ">-3</button>
+
+    <button onclick="
+        console.log('Cart was reset.');
+        cartQuantity = 0;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <p class = 'result'></p>
+
+    <script>
+        let cartQuantity = 0;
+
+        displayResult();
+
+        function updataCartquantity(value){
+            if (cartQuantity + value > 10){
+                alert('Your Cart is full.');
+                return ;
+            }
+            
+            if (cartQuantity+value<0){
+                alert('Not enoguh items in the cart.');
+                return;
+            }
+            
+            cartQuantity+=value;
+            
+            displayResult();
+            
+        }
+        function displayResult(){
+            document.querySelector('.result').innerHTML = (`Cart Quantity: ${cartQuantity}`);
+            
+        }
+    </script>
+
+</body>
+</html>

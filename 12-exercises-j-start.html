@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // const multiply = (param1,param2) => console.log(param1*param2);
+        
+        // multiply(2,3);
+        // multiply(7,10);
+
+        // function countPosivies(nums){
+        //     let posivieNum = 0 ;
+
+        //     nums.forEach((num) =>{
+        //         if(num>0){
+        //             posivieNum ++;
+        //         }
+        //     }
+        //     )
+        //     return posivieNum;
+        // }
+
+        // console.log(countPosivies([2,-3]))
+
+
+        // function addNum(array,num){
+
+        //     return array.map((nums) => nums+num)
+        // }
+        // console.log(addNum([1,2,3],2))
+
+        function removeEgg(foods){
+            let nums = 0;
+            return foods.filter((food)=> {
+                if(food ==='egg' && nums<2){
+                    nums++;
+                    return false;
+                }
+
+                return true;
+                
+            });
+        }
+        console.log(removeEgg(['egg','egg','apple','egg']))
+    </script>
+</body>
+</html>
